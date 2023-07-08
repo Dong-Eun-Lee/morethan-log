@@ -13,7 +13,10 @@ import { DEFAULT_CATEGORY } from "../constants"
 export async function getStaticProps() {
   try {
     const posts = await getPosts()
-    const filteredPost = filterPosts(posts)
+    const filteredPost = filterPosts(posts, {
+      acceptStatus: ["Public", "PublicOnDetail"],
+      acceptType: ["Paper", "Post", "Page"],
+    })
     const tags = getAllSelectItemsFromPosts("tags", filteredPost)
     const categories = getAllSelectItemsFromPosts("category", filteredPost)
 
