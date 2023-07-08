@@ -23,7 +23,7 @@ const ContactCard: React.FC = () => {
             <div className="text-sm">github</div>
           </a>
         )}
-        {CONFIG.profile.instagram && (
+        {/* {CONFIG.profile.instagram && (
           <a
             href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
             rel="noreferrer"
@@ -33,7 +33,7 @@ const ContactCard: React.FC = () => {
             <AiOutlineInstagram className="text-2xl" />
             <div className="text-sm">instagram</div>
           </a>
-        )}
+        )} */}
         {CONFIG.profile.email && (
           <a
             href={`mailto:${CONFIG.profile.email}`}
@@ -45,7 +45,7 @@ const ContactCard: React.FC = () => {
             <div className="text-sm">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
+        {/* {CONFIG.profile.linkedin && (
           <a
             href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
             rel="noreferrer"
@@ -55,7 +55,7 @@ const ContactCard: React.FC = () => {
             <AiFillLinkedin className="text-2xl flex-shrink-0" />
             <div className="text-sm">linkedin</div>
           </a>
-        )}
+        )} */}
       </ul>
     </>
   )
